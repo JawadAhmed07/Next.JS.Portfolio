@@ -25,3 +25,214 @@ body {
     text-wrap: balance;
   }
 } */
+
+@layer base {
+  :root {
+
+    --background: 0 0% 100%;
+
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+
+    --input: 214.3 31.8% 91.4%;
+
+    --ring: 222.2 84% 4.9%;
+
+    --chart-1: 12 76% 61%;
+
+    --chart-2: 173 58% 39%;
+
+    --chart-3: 197 37% 24%;
+
+    --chart-4: 43 74% 66%;
+
+    --chart-5: 27 87% 67%;
+
+    --radius: 0.5rem
+  }
+  .dark {
+
+    --background: 222.2 84% 4.9%;
+
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+
+    --input: 217.2 32.6% 17.5%;
+
+    --ring: 212.7 26.8% 83.9%;
+
+    --chart-1: 220 70% 50%;
+
+    --chart-2: 160 60% 45%;
+
+    --chart-3: 30 80% 55%;
+
+    --chart-4: 280 65% 60%;
+
+    --chart-5: 340 75% 55%
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+.testimonial-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 550px;
+  cursor: pointer;
+  margin: auto;
+  min-height: 450px; /* Ensures all cards are the same height */
+  justify-content: space-between; /* Makes sure all items have equal space */
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card img {
+  border-color: #4A7766;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.testimonial-card h2 {
+  color: #4A7766;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #333333;
+  text-align: center;
+  flex-grow: 1; /* Allows the text to grow and take up space */
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* .inline-block {
+  background-color: #4A7766;
+  height: 4px;
+  width: 40px;
+  margin: 15px auto;
+  border-radius: 2px;
+} */
+.proposal{
+  background-image: url("https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZSUyMG1lZXRpbmd8ZW58MHwwfDB8fHwy");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+/* Custom styles for DropdownMenu */
+.custom-dropdown-menu {
+  background-color: #f0f0f0; /* Background color for the menu */
+  color: #333; /* Text color */
+  max-height: 300px; /* Set maximum height for the menu */
+  overflow-y: auto; /* Enable scrolling when content exceeds height */
+  border: 1px solid #ddd; /* Add border around the dropdown menu */
+  border-radius: 8px; /* Rounded corners for the dropdown menu */
+}
+
+.custom-dropdown-menu-item {
+  color: #007bff; /* Text color for menu items */
+  padding: 10px 16px; /* Padding for items */
+  border-bottom: 1px solid #ddd; /* Border between items */
+}
+
+.custom-dropdown-menu-item:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+
+.custom-dropdown-menu-item:hover {
+  background-color: #007bff; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
