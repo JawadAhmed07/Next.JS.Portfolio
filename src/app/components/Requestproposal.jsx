@@ -1,6 +1,5 @@
-import React from 'react'
 
-function Requestproposal() {
+export default function RequestProposal() {
   return (
     <section
             style={{ backgroundColor: "#4A7766" }}
@@ -99,5 +98,3 @@ function Requestproposal() {
             </section>
   )
 }
-
-export default Requestproposal

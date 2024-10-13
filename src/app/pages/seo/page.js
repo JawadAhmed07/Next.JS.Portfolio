@@ -12,8 +12,8 @@ import eight from '../../Images/seopage/eight.png';
 import ninth from '../../Images/seopage/ninth.png';
 import searchengine from '../../Images/seopage/searchengine.png';
 import eleven from '../../Images/seopage/eleven.jpg';
-import WhyChooseUs from "../components/whychooseus";
-import Reviews from "../components/reviews";
+import WhyChooseUs from "../../components/whychooseus";
+import Reviews from "../../components/reviews";
 
 
 
