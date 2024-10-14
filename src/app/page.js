@@ -1,8 +1,9 @@
 "use client";
 
 import { Button } from "@nextui-org/react"; // Importing NextUI Button component
+import Link from "next/link";
 import { useEffect, useState } from "react";
-// import Image from "next/image"; // Using Next.js Image for optimization
+import Image from "next/image"; // Using Next.js Image for optimization
 // import Features from "../components/features";
 // import Requestproposal from "../components/Requestproposal";
 // import Reviews from "../components/reviews";
@@ -48,9 +49,11 @@ export default function Home() {
               business.
             </p>
             <div className="flex justify-center">
+              <Link  href="../../components/Requestproposal">
               <Button auto shadow color="primary">
                 Request a Proposal
               </Button>
+              </Link>
             </div>
           </div>
         </div>

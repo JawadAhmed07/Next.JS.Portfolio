@@ -1,4 +1,5 @@
 "use client";
+import { usePathname } from "next/navigation";
 import {
   Navbar,
   NavbarBrand,
@@ -11,8 +12,10 @@ import {
   Button,
 } from "@nextui-org/react";
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function Header() {
+  const pathname = usePathname();
   return (
     <Navbar isBordered className="text-balance text-center bg-slate-50 z-10" position="sticky">
       <NavbarContent justify="start">
@@ -23,10 +26,11 @@ export default function Header() {
             aria-label="menu"
             className="flex items-center"
           >
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6tzwkSJr3mPy9yIuMQcpjV7AI-O7z8hXSA&s"
+            <Image
+              src="/Images/images"
               alt="Logo"
-              style={{ width: "40px", height: "40px" }}
+              width= "50"
+              height= "40"
             />
             <p className="hidden px-2 sm:block font-bold text-inherit">
               DevScripters
@@ -36,7 +40,7 @@ export default function Header() {
 
         <NavbarContent className="hidden sm:flex gap-7">
           <NavbarItem className="list-none">
-            <Link href="/" passHref>
+            <Link className={`link ${pathname === "/" ? "active" : ''}`} href="/">
               Home
             </Link>
           </NavbarItem>
@@ -57,17 +61,17 @@ export default function Header() {
                 className="custom-dropdown-menu w-[180px]"
               >
                 <DropdownItem key="webdevelopment" textValue="Web Development">
-                  <Link href="/webdevelopment" passHref>
+                  <Link className={`link ${pathname === "/pages/webdevelopment" ? "active" : ''}`} href="/pages/webdevelopment">
                     Web Development
                   </Link>
                 </DropdownItem>
                 <DropdownItem key="usage_metrics" textValue="SEO">
-                  <Link href="/seo" passHref>
+                  <Link className={`link ${pathname === "/pages/seo" ? "active" : ''}`} href="/pages/seo">
                     SEO
                   </Link>
                 </DropdownItem>
                 <DropdownItem key="seo" textValue="Graphic Design">
-                  <Link href="/graphicdesign" passHref>
+                  <Link className={`link ${pathname === "/pages/graphicdesign" ? "active" : ''}`} href="/pages/graphicdesign">
                     Graphic Design
                   </Link>
                 </DropdownItem>
@@ -75,22 +79,22 @@ export default function Header() {
             </Dropdown>
           </NavbarItem>
           <NavbarItem>
-            <Link href="/blog" passHref>
+            <Link className={`link ${pathname === "/pages/blog" ? "active" : ''}`} href="/pages/blog">
               Blog
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="/writeforus" passHref>
+            <Link className={`link ${pathname === "/pages/writeforus" ? "active" : ''}`} href="/pages/writeforus">
               Write For Us
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="/about" passHref>
+            <Link className={`link ${pathname === "/pages/about" ? "active" : ''}`} href="/pages/about">
             About Us
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="/contact" passHref>
+            <Link className={`link ${pathname === "/pages/contact" ? "active" : ''}`} href="/pages/contact">
             Contact Us
             </Link>
           </NavbarItem>

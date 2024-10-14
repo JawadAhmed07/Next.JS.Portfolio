@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@nextui-org/react"; // Import NextUI components as needed
+// import img from "next/img";
 
 function Footer() {
   return (
@@ -98,32 +99,32 @@ function Footer() {
             <h5 className="text-lg font-semibold mb-4">Our Logos</h5>
             <div className="space-y-4">
               <a href="https://www.google.com/search?q=zera+creative+agency" target="_blank" rel="noopener noreferrer">
-                <img
+                <img width={500} height={300}
                   src="https://zeracreative.com/wp-content/uploads/2023/06/zera-creative-top-seo-company-google-business.png"
                   alt="Google Business"
                   className="w-40 h-auto"
                 />
               </a>
               <a href="https://clutch.co/profile/zera-creative" target="_blank" rel="noopener noreferrer">
-                <img
+                <img width={500} height={300}
                   src="https://zeracreative.com/wp-content/uploads/2024/06/clutch.png"
                   alt="Clutch"
                   className="w-40 h-auto"
                 />
               </a>
               <a href="https://www.goodfirms.co/company/zera-creative" target="_blank" rel="noopener noreferrer">
-                <img
+                <img width={500} height={300}
                   src="https://zeracreative.com/wp-content/uploads/2023/06/zera-creative-top-seo-company-goodfirms.png"
                   alt="GoodFirms"
                   className="w-40 h-auto"
                 />
               </a>
-              <img
+              <img width={500} height={300}
                 src="https://zeracreative.com/wp-content/uploads/2024/06/payment.webp"
                 alt="Secure Payment Method"
                 className="w-40 h-auto"
               />
-              <img
+              <img width={500} height={300}
                 src="https://zeracreative.com/wp-content/uploads/2024/06/trustpilot-badge.png"
                 alt="Trustpilot Badge"
                 className="w-40 h-auto"
