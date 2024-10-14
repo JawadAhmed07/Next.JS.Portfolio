@@ -82,8 +82,8 @@ const ReviewCard = ({ review }) => {
     <div className="bg-white shadow-lg p-6 rounded-lg w-96 my-4 mx-2 border">
       <div className='flex gap-4'>
         <div className='my-2'>
-          {/* Use img for external logos */}
-          <img src={logo} alt="Google logo" className="w-8 h-8 rounded-full" />
+          {/* Use Image for external logos */}
+          <Image width={500} height={300} src={logo} alt="Google logo" className="w-8 h-8 rounded-full" />
         </div>
         <div>
           <div className="flex items-center">
