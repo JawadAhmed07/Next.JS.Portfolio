@@ -5,7 +5,7 @@ import airmax from "../../../Images/airmax.png";
 import brothersbond from "../../../Images/brothersbond.png";
 import fluid from "../../../Images/fluid.png";
 import lightup from "../../../Images/lightup.png";
-import monstera from "../../../Images/monstera.png";
+// import monstera from "../../../Images/monstera.png";
 import shery from "../../../Images/shery.png";
 import websitedes from "../../../Images/websitedes.png";
 import websitedesign from "../../../Images/websitedesign.png";
@@ -56,8 +56,8 @@ function Webdevelopment() {
               </button>
             </div>
             <p className="text-sm mt-2 text-gray-500 mb-8 w-full">
-              "Subscribe to our newsletter for the latest updates and special
-              offers."
+              Subscribe to our newsletter for the latest updates and special
+              offers.
             </p>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -131,7 +131,7 @@ function Webdevelopment() {
                   </svg>
                 </button>
                 <p className="text-xs text-gray-500 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
+                  Literally you probably havent heard of them jean shorts.
                 </p>
               </div>
             </div>
@@ -173,7 +173,7 @@ function Webdevelopment() {
                   </svg>
                 </button>
                 <p className="text-xs text-gray-500 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
+                  Literally you probably havent heard of them jean shorts.
                 </p>
               </div>
             </div>
@@ -210,7 +210,7 @@ function Webdevelopment() {
                   </svg>
                 </button>
                 <p className="text-xs text-gray-500 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
+                  Literally you probably havent heard of them jean shorts.
                 </p>
               </div>
             </div>
@@ -249,7 +249,7 @@ function Webdevelopment() {
                   </svg>
                 </button>
                 <p className="text-xs text-gray-500 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
+                  Literally you probably havent heard of them jean shorts.
                 </p>
               </div>
             </div>
@@ -265,9 +265,9 @@ function Webdevelopment() {
             Our Recent Projects of Web Design
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            "Take a look at some of our latest web design projects, showcasing
+            Take a look at some of our latest web design projects, showcasing
             creativity, functionality, and client satisfaction across various
-            industries."
+            industries.
           </p>
         </div>
         <div className="p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-5 gap-6">
